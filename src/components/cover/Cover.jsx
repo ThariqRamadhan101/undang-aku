@@ -1,4 +1,5 @@
 import { forwardRef } from "react";
+import BookLogo from "../../assets/book-logo.png";
 import "./Cover.css";
 
 const Cover = forwardRef((props, ref) => {
@@ -27,7 +28,7 @@ const Cover = forwardRef((props, ref) => {
         </svg>
       </div>
       <img
-        src="src/assets/book-logo.png" // Use a relative path that works in your project
+        src={BookLogo}
         alt="Wedding Image"
         className="mb-6 max-w-[280px] h-auto mx-auto"
       />

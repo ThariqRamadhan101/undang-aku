@@ -1,4 +1,5 @@
 import { forwardRef } from "react";
+import Illustration from "../../assets/illustration.png";
 
 const Poem = forwardRef((props, ref) => {
   return (
@@ -23,7 +24,7 @@ const Poem = forwardRef((props, ref) => {
         ***
       </p>
       <img
-        src="src/assets/ilustration.png" // Use a relative path that works in your project
+        src={Illustration}
         alt="Ilustration Image"
         className="max-w-[200px] h-auto mx-auto"
       />

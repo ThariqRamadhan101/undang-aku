@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import { FaVolumeUp, FaVolumeMute } from "react-icons/fa";
+import Music from "../../assets/Together_We_Fly.mp3";
 
 const MusicPlayer = () => {
   const [isMuted, setIsMuted] = useState(false);
@@ -16,7 +17,7 @@ const MusicPlayer = () => {
     <div className="fixed top-4 right-4 z-50 flex items-center">
       <audio
         ref={audioRef}
-        src="src/assets/Together_We_Fly.mp3" // Replace with the path to your song
+        src={Music} // Replace with the path to your song
         autoPlay
         loop
       />
