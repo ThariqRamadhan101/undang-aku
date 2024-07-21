@@ -1,0 +1,18 @@
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hint {
+  animation: pulse 2s infinite;
+}
