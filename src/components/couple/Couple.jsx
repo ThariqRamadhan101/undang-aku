@@ -34,7 +34,7 @@ const Couple = forwardRef((props, ref) => {
         <div className="flex items-center mb-10">
           <div className="flex-1 h-[1px] bg-gray-400"></div>
           <span className="px-4 text-gray-600 font-semibold font-dancing">
-            AND
+            dan
           </span>
           <div className="flex-1 h-[1px] bg-gray-400"></div>
         </div>

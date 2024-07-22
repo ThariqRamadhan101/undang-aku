@@ -1,4 +1,4 @@
-@keyframes pulse {
+@keyframes pulseSlide {
   0% {
     opacity: 1;
     transform: translateY(0);
@@ -14,5 +14,5 @@
 }
 
 .hint {
-  animation: pulse 2s infinite;
+  animation: pulseSlide 2s infinite;
 }

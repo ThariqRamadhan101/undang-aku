@@ -38,7 +38,7 @@ const Cover = forwardRef((props, ref) => {
       <h3 className="text-2xl font-montserrat">
         {sebagaiValue || "Orang baik"}
       </h3>
-      <div className="block absolute bottom-4 left-1/2 transform -translate-x-1/2 text-gray-600 text-sm hint lg:right-0">
+      <div className="block absolute bottom-4 right-5 transform -translate-x-1/2 text-gray-600 text-sm hint lg:right-0">
         <p>Klik untuk buka ...</p>
       </div>
     </div>

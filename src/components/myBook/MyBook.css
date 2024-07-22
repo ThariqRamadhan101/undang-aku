@@ -1,0 +1,32 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 1.5s ease-out;
+}
+
+.circle-behind {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Adjust size as needed */
+  background-color: rgba(0, 0, 0, 0.3); /* Adjust color as needed */
+  border-radius: 50%;
+  z-index: -1; /* Place behind other elements */
+}
+
+.container {
+  position: relative;
+  width: 331px; /* Match the width of the flipbook */
+  height: 729px; /* Match the height of the flipbook */
+}

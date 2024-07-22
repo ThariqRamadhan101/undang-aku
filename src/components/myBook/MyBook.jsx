@@ -7,7 +7,9 @@ import AgendaWeddReception from "../agendaWeddReception/AgendaWeddReception";
 import Poem from "../poem/Poem";
 import Gift from "../gift/Gift";
 import Greetings from "../greetings/Greetings";
+import OurJourneyCover from "../ourJourneyCover/OurJourneyCover";
 import OurJourney from "../ourJourney/OurJourney";
+import "./MyBook.css";
 
 export default function MyBook() {
   const [showGreetings, setShowGreetings] = useState(false);
@@ -19,14 +21,15 @@ export default function MyBook() {
   return (
     <div className="grid place-items-center h-screen">
       {!showGreetings && (
-        <div>
-          <HTMLFlipBook width={331} height={729} maxShadowOpacity={0.3}>
+        <div className=" fade-in-up">
+          <HTMLFlipBook width={331} height={729} maxShadowOpacity={0.5}>
             <Cover />
             <Couple />
             <AgendaWeddContract />
             <AgendaWeddReception />
-            <Poem />
+            <OurJourneyCover />
             <OurJourney />
+            <Poem />
             <Gift />
           </HTMLFlipBook>
         </div>
