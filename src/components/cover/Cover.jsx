@@ -33,12 +33,12 @@ const Cover = forwardRef((props, ref) => {
         className="mb-6 max-w-[280px] h-auto mx-auto"
       />
       <h1 className="text-4xl font-bold mb-5 font-dancing">Thariq & Sherly</h1>
-      <h1 className="text-xl font-bold mb-20 font-dancing">24 Agustus 2024</h1>
+      <h1 className="text-xl font-bold mb-20 font-dancing">Agustus 2024</h1>
       <h3 className="text-xxl mb-2 font-montserrat">Kepada :</h3>
       <h3 className="text-2xl font-montserrat">
         {sebagaiValue || "Orang baik"}
       </h3>
-      <div className="block absolute bottom-4 right-5 transform -translate-x-1/2 text-gray-600 text-sm hint lg:right-0">
+      <div className="block absolute bottom-4 right-5 transform -translate-x-1/2 text-gray-600 text-sm hint mr-1 lg:right-0">
         <p>Klik untuk buka ...</p>
       </div>
     </div>

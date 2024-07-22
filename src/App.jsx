@@ -1,14 +1,18 @@
+import { BrowserRouter } from "react-router-dom";
 import MyBook from "./components/myBook/MyBook";
-import Footer from "./components/footer/Footer";
-import MusicPlayer from "./components/musicPlayer/MusicPlayer"; // Import your MusicPlayer component
+import Modal from "./components/modal/Modal";
+import MusicPlayer from "./components/musicPlayer/MusicPlayer";
 
 function App() {
   return (
-    <div className="App">
-      <MyBook />
-      <Footer />
-      <MusicPlayer />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Modal />
+        <MyBook />
+        {/* <Footer /> */}
+        <MusicPlayer />
+      </div>
+    </BrowserRouter>
   );
 }
 

@@ -7,7 +7,6 @@ import AgendaWeddReception from "../agendaWeddReception/AgendaWeddReception";
 import Poem from "../poem/Poem";
 import Gift from "../gift/Gift";
 import Greetings from "../greetings/Greetings";
-import OurJourneyCover from "../ourJourneyCover/OurJourneyCover";
 import OurJourney from "../ourJourney/OurJourney";
 import "./MyBook.css";
 
@@ -22,14 +21,18 @@ export default function MyBook() {
     <div className="grid place-items-center h-screen">
       {!showGreetings && (
         <div className=" fade-in-up">
-          <HTMLFlipBook width={331} height={729} maxShadowOpacity={0.5}>
+          <HTMLFlipBook
+            width={331}
+            height={729}
+            maxShadowOpacity={0.5}
+            showCover={true}
+          >
             <Cover />
             <Couple />
             <AgendaWeddContract />
             <AgendaWeddReception />
-            <OurJourneyCover />
-            <OurJourney />
             <Poem />
+            <OurJourney />
             <Gift />
           </HTMLFlipBook>
         </div>
