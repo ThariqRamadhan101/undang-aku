@@ -32,7 +32,7 @@ const Modal = () => {
           </h3>
         </div>
         <p className="py-2 text-sm font-medium">
-          Kamu dikiriman buku nih.
+          Kamu dikirimin buku nih.
           <br /> Selamat membaca ya...
         </p>
         <div className="flex justify-center mt-4">

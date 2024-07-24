@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { FaVolumeUp, FaVolumeMute } from "react-icons/fa";
+import { TbMusic, TbMusicOff } from "react-icons/tb";
 import Music from "../../assets/Together_We_Fly.mp3";
 
 const MusicPlayer = () => {
@@ -36,13 +36,13 @@ const MusicPlayer = () => {
   }, [isPlaying]);
 
   return (
-    <div className="fixed top-4 right-4 z-50 flex items-center">
+    <div className="absolute top-4 right-4 z-50 flex items-center">
       <audio ref={audioRef} src={Music} loop />
       <button
         onClick={toggleMute}
         className="bg-gray-700 text-white rounded-full p-2 flex items-center justify-center shadow-md"
       >
-        {isMuted ? <FaVolumeMute size={24} /> : <FaVolumeUp size={24} />}
+        {isMuted ? <TbMusicOff size={24} /> : <TbMusic size={24} />}
       </button>
     </div>
   );
