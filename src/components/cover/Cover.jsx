@@ -1,5 +1,6 @@
 import { forwardRef } from "react";
 import BookLogo from "../../assets/book-logo.png";
+import flowerDoodle from "../../assets/flower-doodle.avif";
 import "./Cover.css";
 
 const Cover = forwardRef((props, ref) => {
@@ -12,6 +13,13 @@ const Cover = forwardRef((props, ref) => {
       ref={ref}
       className="flex flex-col items-center justify-center p-8 border bg-[#F4ECE8] border-gray-300 shadow-lg h-full w-full mx-auto text-center relative"
     >
+      <div
+        className="absolute inset-0 bg-repeat bg-center opacity-5 -z-10"
+        style={{
+          backgroundImage: `url(${flowerDoodle})`,
+          backgroundSize: "500px", // Adjust size as needed
+        }}
+      ></div>
       <div className="relative w-full max-w-2xl p-4 mx-auto lg:max-w-x">
         <svg viewBox="0 0 500 200" className="w-full h-auto lg:h-40">
           <path id="curve" d="M10,150 Q250,50 490,150" fill="transparent" />

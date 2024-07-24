@@ -20,13 +20,11 @@ const OurJourney = forwardRef((props, ref) => {
       <p className="mb-4">Begitulah pertemanan mereka hingga tamat SMA.</p>
       <h2 className="text-lg font-semibold mb-2">Tahun 2016</h2>
       <p className="mb-4">
-        Thariq meneruskan perkuliahan di ITB sedangkan Sherly dihampiri dengan
-        kegalauan dilanda dilema setelah dinyatakan lolos di FIKOM UNPAD. Ada
-        pilihan UNPAD, atau STMIK Indonesia Padang dengan beasiswa.
+        Thariq meneruskan perkuliahan di ITB sedangkan Sherly dihampiri
+        kegalauan. UNPAD atau STMIK Indonesia Padang dengan beasiswa.
       </p>
     </>,
     <>
-      {" "}
       <p className="mb-4">
         Gundah tersebut disampaikan pada pembina asramanya, Pak Yamin, yang
         biasa dipanggil “Ayah”. “Kalau di UNPAD, kalian akan sama-sama di
@@ -97,7 +95,7 @@ const OurJourney = forwardRef((props, ref) => {
 
           <div
             key={index}
-            className="bg-white p-6 rounded-lg shadow-lg max-w-2xl mx-auto mt-8 text-xs text-justify max-h-[590px] w-full"
+            className="bg-white p-6 rounded-lg shadow-lg max-w-2xl mx-auto mt-8 text-xs text-justify h-[590px] w-full"
           >
             {section}
           </div>

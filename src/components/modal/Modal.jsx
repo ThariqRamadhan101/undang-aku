@@ -22,22 +22,24 @@ const Modal = () => {
     <dialog
       ref={modalRef}
       id="my_modal_5"
-      className="modal modal-bottom sm:modal-middle"
+      className="modal fixed top-14 inset-x-0 bg-transparent flex justify-center items-start pt-4"
     >
-      <div className="modal-box">
-        <div className="flex items-center space-x-2 mb-4">
-          <BiPackage className="text-5xl" />
-          <h3 className="font-bold text-2xl">
+      <div className="modal-box bg-white bg-opacity-40 backdrop-blur-sm p-4 rounded-lg shadow-md max-w-xs w-full">
+        <div className="flex items-center space-x-2 mb-2">
+          <BiPackage className="text-2xl" />
+          <h3 className="font-bold text-xl">
             Hai, {sebagaiValue || "Orang Baik"}!
           </h3>
         </div>
-        <p className="py-4 text-xl">
-          Kamu mendapatkan sebuah buku. Selamat membaca.
+        <p className="py-2 text-sm font-medium">
+          Kamu dikiriman buku nih.
+          <br /> Selamat membaca ya...
         </p>
-        <p className="py-4"></p>
-        <div className="modal-action">
+        <div className="flex justify-center mt-4">
           <form method="dialog">
-            <button className="btn border-black">Terima</button>
+            <button className="btn btn-xs text-xs btn-wide bg-opacity-80">
+              Terima
+            </button>
           </form>
         </div>
       </div>

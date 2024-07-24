@@ -1,4 +1,6 @@
 import { forwardRef } from "react";
+import FlowerTop from "../../assets/frame-top.png";
+import FlowerBottom from "../../assets/frame-bottom.png";
 import "./Couple.css";
 
 const Couple = forwardRef((props, ref) => {
@@ -7,6 +9,11 @@ const Couple = forwardRef((props, ref) => {
       ref={ref}
       className="flex flex-col items-center p-8 border bg-[#F4ECE8] border-gray-300 shadow-lg h-full w-full"
     >
+      <img
+        src={FlowerTop}
+        alt="Flower"
+        className="absolute -top-7 -right-5  w-80"
+      />
       <h1 className="text-3xl font-bold mb-12 font-playfair">
         Pasangan Penganten
       </h1>
@@ -26,7 +33,7 @@ const Couple = forwardRef((props, ref) => {
           </h3>
           <h4 className="text-xs font-semibold mb-1">Putra pertama dari</h4>
           <h4 className="text-xs">
-            Bpk. Yasrial Yasin & Ibu Teti Chandrayanti
+            Bpk. H. Yasrial Yasin & Ibu Hj. Teti Chandrayanti
           </h4>
         </div>
 
@@ -51,12 +58,17 @@ const Couple = forwardRef((props, ref) => {
           <h4 className="text-xs">Bpk. Anasril & Ibu Armaini</h4>
         </div>
       </div>
-      <div className="block absolute bottom-14 left-5 transform -translate-x-1/2 text-gray-600 text-sm pulse-animation">
-        <p>Klik untuk kembali...</p>
+      <div className="block absolute bottom-4 left-5 transform -translate-x-1/2 text-gray-600 text-sm pulse-animation">
+        <p>Back...</p>
       </div>
       <div className="block absolute bottom-4 right-5 transform -translate-x-1/2 text-gray-600 text-sm pulse-animation">
-        <p>Klik untuk lanjut...</p>
+        <p>Next...</p>
       </div>
+      <img
+        src={FlowerBottom}
+        alt="FlowerBottom"
+        className="absolute -bottom-0 -left-5  w-80"
+      />
     </div>
   );
 });

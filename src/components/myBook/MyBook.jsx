@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import HTMLFlipBook from "react-pageflip";
 import Cover from "../cover/Cover";
 import Couple from "../couple/Couple";
@@ -8,24 +8,34 @@ import Poem from "../poem/Poem";
 import Gift from "../gift/Gift";
 import Greetings from "../greetings/Greetings";
 import OurJourney from "../ourJourney/OurJourney";
+import BackCover from "../backCover/BackCover";
+import pageFlipSound from "../../assets/page-flip.mp3";
 import "./MyBook.css";
 
 export default function MyBook() {
   const [showGreetings, setShowGreetings] = useState(false);
+  const audioRef = useRef(null);
 
   const toggleGreetings = () => {
     setShowGreetings(!showGreetings);
   };
 
+  const handlePageFlip = () => {
+    if (audioRef.current) {
+      audioRef.current.play();
+    }
+  };
+
   return (
-    <div className="grid place-items-center h-screen">
+    <div className="grid place-items-center h-screen gap-2">
       {!showGreetings && (
-        <div className=" fade-in-up">
+        <div className="fade-in-up">
           <HTMLFlipBook
             width={331}
-            height={729}
+            height={720}
             maxShadowOpacity={0.5}
             showCover={true}
+            onFlip={handlePageFlip} // Handle page flip event
           >
             <Cover />
             <Couple />
@@ -34,6 +44,7 @@ export default function MyBook() {
             <Poem />
             <OurJourney />
             <Gift />
+            <BackCover />
           </HTMLFlipBook>
         </div>
       )}
@@ -51,6 +62,7 @@ export default function MyBook() {
           </div>
         )}
       </div>
+      <audio ref={audioRef} src={pageFlipSound} preload="auto"></audio>
     </div>
   );
 }

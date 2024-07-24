@@ -8,13 +8,13 @@ import "./Greetings.css"; // Import the custom animation CSS
 // Initialize Firebase
 if (!firebase.apps.length) {
   firebase.initializeApp({
-    apiKey: "AIzaSyCKyv3D-nJsLkWYxh5ZuFIP8qoB8SkgFv8",
-    authDomain: "undanganku-56e72.firebaseapp.com",
-    projectId: "undanganku-56e72",
-    storageBucket: "undanganku-56e72.appspot.com",
-    messagingSenderId: "805250040859",
-    appId: "1:805250040859:web:45a329e288f04ba65ee4be",
-    measurementId: "G-8JNP42398Q",
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+    authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+    projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_FIREBASE_APP_ID,
+    measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
   });
 }
 const firestore = firebase.firestore();
@@ -25,9 +25,7 @@ const Greetings = () => {
   const [messages, loading, error] = useCollectionData(
     firestore.collection("messages").orderBy("createdAt", "desc")
   );
-
   const [visibleMessages, setVisibleMessages] = useState([]);
-  const [visibleCount] = useState(0);
   const [submitStatus, setSubmitStatus] = useState(null);
   const [isLocked, setIsLocked] = useState(false);
 
@@ -55,10 +53,10 @@ const Greetings = () => {
   };
 
   useEffect(() => {
-    if (messages && messages.length > 0) {
+    if (messages) {
       setVisibleMessages(messages.slice(0, messages.length));
     }
-  }, [messages, visibleCount]);
+  }, [messages]);
 
   return (
     <div className="flex flex-col items-center justify-center p-8 border bg-gray-400 border-gray-300 shadow-lg h-full w-full relative fade-in-up">
