@@ -33,7 +33,7 @@ const Couple = forwardRef((props, ref) => {
           </h3>
           <h4 className="text-xs font-semibold mb-1">Putra pertama dari</h4>
           <h4 className="text-xs">
-            Bpk. H. Yasrial Yasin & Ibu Hj. Teti Chandrayanti
+            Bpk. Ir. H. Yasrial Yasin & Ibu Hj. Teti Chandrayanti
           </h4>
         </div>
 

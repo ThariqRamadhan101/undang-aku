@@ -31,8 +31,8 @@ export default function MyBook() {
       {!showGreetings && (
         <div className="fade-in-up">
           <HTMLFlipBook
-            width={331}
-            height={720}
+            width={330}
+            height={695}
             maxShadowOpacity={0.5}
             showCover={true}
             onFlip={handlePageFlip} // Handle page flip event

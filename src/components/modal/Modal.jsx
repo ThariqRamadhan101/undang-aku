@@ -22,9 +22,9 @@ const Modal = () => {
     <dialog
       ref={modalRef}
       id="my_modal_5"
-      className="modal fixed top-14 inset-x-0 bg-transparent flex justify-center items-start pt-4"
+      className="modal fixed inset-x-0 bg-black bg-opacity-60 flex justify-center items-start pt-14"
     >
-      <div className="modal-box bg-white bg-opacity-40 backdrop-blur-sm p-4 rounded-lg shadow-md max-w-xs w-full">
+      <div className="modal-box bg-white bg-opacity-60 backdrop-blur-sm p-4 rounded-lg shadow-md max-w-xs w-full">
         <div className="flex items-center space-x-2 mb-2">
           <BiPackage className="text-2xl" />
           <h3 className="font-bold text-xl">
@@ -37,9 +37,7 @@ const Modal = () => {
         </p>
         <div className="flex justify-center mt-4">
           <form method="dialog">
-            <button className="btn btn-xs text-xs btn-wide bg-opacity-80">
-              Terima
-            </button>
+            <button className="btn btn-sm text-sm btn-wide">Terima</button>
           </form>
         </div>
       </div>

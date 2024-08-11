@@ -1,5 +1,13 @@
+/* eslint-disable react/prop-types */
 import { useState, useEffect } from "react";
-import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
+import {
+  BsEmojiGrin,
+  BsEmojiHeartEyes,
+  BsEmojiLaughing,
+  BsEmojiSmile,
+  BsEmojiSunglasses,
+  BsEmojiWink,
+} from "react-icons/bs";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 import firebase from "firebase/compat/app";
 import "firebase/compat/firestore";
@@ -58,8 +66,48 @@ const Greetings = () => {
     }
   }, [messages]);
 
+  const ChatBubble = ({ messages }) => {
+    const getRandomIcon = () => {
+      const icons = [
+        BsEmojiGrin,
+        BsEmojiHeartEyes,
+        BsEmojiLaughing,
+        BsEmojiSmile,
+        BsEmojiSunglasses,
+        BsEmojiWink,
+      ];
+      const randomIndex = Math.floor(Math.random() * icons.length);
+      return icons[randomIndex];
+    };
+
+    return (
+      <div className="max-h-72 overflow-y-auto w-full">
+        {messages.map((msg, index) => {
+          const isLeft = index % 2 === 0; // Alternate between left and right
+          const Icon = getRandomIcon(); // Get a random icon
+          return (
+            <div
+              key={index}
+              className={`chat ${isLeft ? "chat-start" : "chat-end"} p-2 m-2`}
+            >
+              <div className="chat-image avatar">
+                <div className="w-10">
+                  <Icon className="text-gray-500 w-8 h-8" />
+                </div>
+              </div>
+              <div className="chat-header">
+                <p className="font-bold">{msg.name}</p>
+              </div>
+              <div className="chat-bubble">{msg.text}</div>
+            </div>
+          );
+        })}
+      </div>
+    );
+  };
+
   return (
-    <div className="flex flex-col items-center justify-center p-8 border bg-gray-400 border-gray-300 shadow-lg h-full w-full relative fade-in-up">
+    <div className="flex flex-col items-center justify-center p-8 border bg-[#F4ECE8] border-gray-300 shadow-lg h-full w-full relative fade-in-up">
       {submitStatus === "success" && (
         <div className="absolute top-4 right-4 bg-green-500 text-white px-4 py-2 rounded shadow-md">
           Ucapan berhasil dikirim 😆
@@ -97,7 +145,7 @@ const Greetings = () => {
           ></textarea>
           <button
             type="submit"
-            className="w-full px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600 focus:outline-none"
+            className="w-full px-4 py-2 bg-[#E0C9C2] text-white rounded hover:bg-gray-400 focus:outline-none"
             disabled={isLocked}
           >
             Kirim
@@ -111,22 +159,7 @@ const Greetings = () => {
 
         {/* Small Line Divider */}
         <div className="w-20 h-[1px] bg-black mb-5"></div>
-        <div className="max-h-72 overflow-y-auto w-full">
-          {visibleMessages.map((msg, index) => (
-            <div
-              key={index}
-              className="p-2 m-2 border bg-white border-gray-300 rounded-xl grid grid-cols-[auto_1fr] items-start"
-            >
-              <div className="flex items-start">
-                <IoChatbubbleEllipsesOutline className="text-gray-500 m-1 w-5" />
-              </div>
-              <div className="text-left">
-                <p className="font-bold">{msg.name}</p>
-                <p className="max-w-xl">{msg.text}</p>
-              </div>
-            </div>
-          ))}
-        </div>
+        <ChatBubble messages={visibleMessages} />
       </div>
     </div>
   );

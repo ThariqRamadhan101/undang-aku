@@ -7,7 +7,7 @@ const event1 = {
   location: "Rumah Keluarga Sherly",
   locationDetail: "JL. A R Hakim Balai-Balai Padang Panjang Barat",
   mapLink: "https://maps.app.goo.gl/7eX1JcCKzwL91sap7",
-  date: "24 Agustus 2024",
+  date: "Sabtu, 24 Agustus 2024",
   time: "11:00 - 16:00 WIB",
   icon: <GiFlowerPot className="text-xl text-[#E0C9C2]" />,
 };
@@ -18,7 +18,7 @@ const event2 = {
   mapLink: "https://maps.app.goo.gl/RitypTG4tTfu9QMA7",
   locationDetail:
     "BBPMP SUMBAR, Komplek Perguruan Tinggi UNP, Air Tawar Bar., Kec. Padang Utara",
-  date: "31 Agustus 2024",
+  date: "Sabtu, 31 Agustus 2024",
   time: "10:00 - 15:30 WIB",
   icon: <GiFlowerPot className="text-xl text-[#E0C9C2]" />,
 };

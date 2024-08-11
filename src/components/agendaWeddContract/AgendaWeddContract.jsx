@@ -6,8 +6,8 @@ const event = {
   title: "Akad Nikah",
   location: "Masjid Islamic Center Padang Panjang",
   mapLink: "https://maps.app.goo.gl/fVgW4v1e6qL9A9kq7",
-  date: "24 Agustus 2024",
-  time: "09:00 - 10:00 WIB",
+  date: "Sabtu, 24 Agustus 2024",
+  time: "08:00 - 10:00 WIB",
   icon: <GiBigDiamondRing className="text-4xl text-[#E0C9C2]" />,
 };
 

@@ -1,4 +1,5 @@
 import { forwardRef } from "react";
+import FlowerJourney from "../../assets/flower-journey.jpg";
 
 const OurJourney = forwardRef((props, ref) => {
   const content = [
@@ -7,7 +8,7 @@ const OurJourney = forwardRef((props, ref) => {
         Suatu siang, di balik tumpukan tugas kelompok matematika. Dipaksa
         bertukar suara. Soal demi soal merangkai pertemanan. Hingga terbiasa
         menjadi teman belajar. Namun tanpa suara. Hanya ada buku, kertas dan
-        sedikit usaha. Untuk menyerahkan buku ke arah meja salah satu siswa yang
+        sedikit usaha untuk menyerahkan buku ke arah meja salah satu siswa yang
         sejajar dengannya. Hanya berjarak dua meja di kelas itu.
       </p>
       <p className="mb-4">
@@ -17,30 +18,40 @@ const OurJourney = forwardRef((props, ref) => {
         Menutup buku itu. Dan kemudian menyerahkan ke teman di sebelahnya dengan
         ucapaan “Kasih ke Thariq.”
       </p>
-      <p className="mb-4">Begitulah pertemanan mereka hingga tamat SMA.</p>
-      <h2 className="text-lg font-semibold mb-2">Tahun 2016</h2>
       <p className="mb-4">
-        Thariq meneruskan perkuliahan di ITB sedangkan Sherly dihampiri
-        kegalauan. UNPAD atau STMIK Indonesia Padang dengan beasiswa.
+        Lelaki itu mencoret selebar kertas, mencurahkan isi kepala untuk
+        menuntaskan pertanyaan yang dikirimkan kepadanya. kemudian ia melakukan
+        hal yang sama. menyerahkan buku ke teman sebelahnya dan berbisik “Titip
+        ke Sherly”
       </p>
+      <p className="mb-4">Begitulah pertemanan mereka hingga tamat SMA.</p>
     </>,
     <>
+      <h2 className="text-lg font-semibold mb-2">Tahun 2016</h2>
+      <p className="mb-4">
+        Thariq meneruskan perkuliahan di ITB sedangkan sherly dihampiri
+        kegalauan. UNPAD dengan biaya pribadi, atau STMIK Indonesia Padang
+        dengan beasiswa.
+      </p>
       <p className="mb-4">
         Gundah tersebut disampaikan pada pembina asramanya, Pak Yamin, yang
-        biasa dipanggil “Ayah”. “Kalau di UNPAD, kalian akan sama-sama di
+        akrab dipanggil “Ayah”. “Kalau di UNPAD, kalian akan sama-sama di
         Bandung, kemungkinan untuk bertemu lebih besar. Kalau UNPAD lebih baik
         menikah dengan biaya dari orang tua masing-masing.” Suara ayah lembut.
       </p>
       <p className="mb-4">
-        Gemuruh hadir di dada Sherly ketika ia mendengar kalimat ‘menikah’.
-        Rasanya ingin menyampaikan “Yah, kami hanya teman”.
+        Gemuruh hadir di dada sherly. Sama sekali tidak ada ia menyinggung nama
+        Thariq dalam pertemuan itu. Apalagi ketika ia mendengar kalimat
+        ‘menikah’. Rasanya ingin menyampaikan “Yah, kami hanya teman”.
       </p>
       <p className="mb-4">
         Sepertinya ayah membaca kerutan di wajah gadis itu. Kemudian ayah
-        melanjutkan ucapannya. “Ketika hendak Sidang Asrama kelas 12. Kan
+        melanjutkan ucapannya. “Ketika hendak Sidang Asrama kelas 12. <i>Kan</i>{" "}
         teman-teman menuliskan nama yang dianggap melanggar aturan asrama. Ayah
         menemukan satu pengaduan untuk nama Sherly dan Thariq”
       </p>
+    </>,
+    <>
       <p className="mb-4">
         Akhirnya Sherly memutuskan berkuliah di STMIK Indonesia Padang. Di
         tahun-tahun berikutnya cerita mereka samar. Nyaris hilang.
@@ -50,8 +61,6 @@ const OurJourney = forwardRef((props, ref) => {
         Hanya ada cerita di beberapa bulan tahun 2020. Ketika Sherly meminta
         Thariq menjadi teman diskusi untuk Menyelesaikan Skripsinya.
       </p>
-    </>,
-    <>
       <h2 className="text-lg font-semibold mb-2">Pertengahan Tahun 2022</h2>
       <p className="mb-4">
         “Ly, mau jadi english speaking partner aku ngga?”. Pesan singkat itu
@@ -60,17 +69,18 @@ const OurJourney = forwardRef((props, ref) => {
       <p className="mb-4">Mereka kembali menjadi teman belajar.</p>
       <h2 className="text-lg font-semibold mb-2">Tahun 2023</h2>
       <p className="mb-4">
-        Thariq meminta upgrade pertemanan. Dari sekedar teman belajar menjadi
-        teman belajar seumur hidup.
+        Thariq mengutarakan keinginannya untuk memiliki seorang teman belajar
+        seumur hidup.
       </p>
       <p className="mb-4">
-        “Maaf, aku belum tuntas dengan mimpiku untuk berkarir di bidang IT”,
-        balas Sherly singkat.
+        Gadis itu menolaknya. Ia masih memiliki mimpi untuk berkarir.
       </p>
       <p className="mb-4">
         Tahun itu juga, Thariq mulai merancang kurikulum belajar untuk Sherly.
         Memaksa belajar hingga larut malam.
       </p>
+    </>,
+    <>
       <p className="mb-4">
         Sebelum tahun berakhir, mimpi itu menghampiri Sherly.
       </p>
@@ -78,6 +88,11 @@ const OurJourney = forwardRef((props, ref) => {
         Dan kemudian Thariq menyampaikan. “Aku ingin saling merawat agar terus
         bertumbuh seperti mawar merah yang tumbuh di dalam buku”
       </p>
+      <img
+        src={FlowerJourney}
+        alt="Flower Journey Image"
+        className="max-w-[150px] h-auto mx-auto"
+      />
     </>,
   ];
   return (
@@ -95,7 +110,7 @@ const OurJourney = forwardRef((props, ref) => {
 
           <div
             key={index}
-            className="bg-white p-6 rounded-lg shadow-lg max-w-2xl mx-auto mt-8 text-xs text-justify h-[590px] w-full"
+            className="bg-white p-6 rounded-lg shadow-lg max-w-2xl mx-auto mt-8 text-xs text-justify h-[570px] w-full"
           >
             {section}
           </div>

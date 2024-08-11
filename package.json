@@ -19,7 +19,8 @@
     "react-firebase-hooks": "^5.1.1",
     "react-icons": "^5.2.1",
     "react-pageflip": "^2.0.3",
-    "react-router-dom": "^6.25.1"
+    "react-router-dom": "^6.25.1",
+    "undang-aku": "file:"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",

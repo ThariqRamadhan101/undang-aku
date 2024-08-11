@@ -20,7 +20,10 @@ const BackCover = forwardRef((props, ref) => {
           Epilog
         </h1>
         <p className="text-sm text-center font-montserrat">
-          Kata-kata epilog yang menarik pembaca untuk datang ke acara pernikahan
+          &quot;Semerbak <i>atsiri</i>, <i>linalol</i>, <i>kumarin</i>,
+          <i>etil vanilin</i>, dan <i>benzil asetat</i> telah hadir. Di
+          lembar-lembar berikutnya, kaulah bunganya. Aromamu telah dipanggil
+          untuk menyempurnakan cerita di halaman buku ini.&quot;
         </p>
       </div>
     </div>
