@@ -26,7 +26,7 @@ const Couple = forwardRef((props, ref) => {
         <div className="flex-1 flex flex-col items-start text-left mb-10 ">
           <h2 className="text-2xl mb-2 font-playfair">Mempelai Pria</h2>
           <h3 className="text-xl font-extrabold font-montserrat">
-            Thariq Ramadhan Alchandra Yasrial S.T.
+            Thariq Ramadhan <br /> Alchandra Yasrial S.T.
           </h3>
           <h4 className="text-xs font-semibold mb-1">Putra pertama dari</h4>
           <h4 className="text-xs">
@@ -50,7 +50,8 @@ const Couple = forwardRef((props, ref) => {
             Mempelai Wanita
           </h2>
           <h3 className="text-xl font-extrabold font-montserrat mb-2">
-            Sherly Ekaputri Arnas S.Kom.
+            Sherly Ekaputri
+            <br /> Arnas S.Kom.
           </h3>
           <h4 className="text-xs font-semibold mb-1">Putri pertama dari</h4>
           <h4 className="text-xs">

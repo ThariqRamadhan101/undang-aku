@@ -1,4 +1,6 @@
 import { forwardRef } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/opacity.css";
 import BookLogo from "../../assets/book-logo.png";
 import flowerDoodle from "../../assets/flower-doodle.avif";
 import "./Cover.css";
@@ -35,10 +37,11 @@ const Cover = forwardRef((props, ref) => {
           </text>
         </svg>
       </div>
-      <img
+      <LazyLoadImage
         src={BookLogo}
         alt="Wedding Image"
         className="mb-6 max-w-[280px] h-auto mx-auto"
+        effect="opacity"
       />
       <h1 className="text-4xl font-bold mb-5 font-dancing">Thariq & Sherly</h1>
       <h1 className="text-xl font-bold mb-20 font-dancing">Agustus 2024</h1>
