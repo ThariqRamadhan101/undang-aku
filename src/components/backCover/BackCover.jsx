@@ -2,6 +2,9 @@ import { forwardRef } from "react";
 import BackCoverImg from "../../assets/back-cover.png";
 
 const BackCover = forwardRef((props, ref) => {
+  // Get the query parameter `sebagai`
+  const queryParams = new URLSearchParams(window.location.search);
+  const sebagaiValue = queryParams.get("sebagai");
   return (
     <div
       ref={ref}
@@ -18,8 +21,10 @@ const BackCover = forwardRef((props, ref) => {
           <p className="text-sm  font-montserrat">
             &quot;Semerbak <i>atsiri</i>, <i>linalol</i>, <i>kumarin</i>,{" "}
             <i>etil vanilin</i>, dan <i>benzil asetat</i> telah hadir. Di
-            lembar-lembar berikutnya, kaulah bunganya. Aromamu telah dipanggil
-            untuk menyempurnakan cerita di halaman buku ini.&quot;
+            lembar-lembar berikutnya,
+            <b>{sebagaiValue ? " " + sebagaiValue + "," : ""}</b> kaulah
+            bunganya. Aromamu telah dipanggil untuk menyempurnakan cerita di
+            halaman buku ini.&quot;
           </p>
         </div>
       </div>
