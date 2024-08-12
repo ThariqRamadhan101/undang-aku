@@ -22,7 +22,7 @@ const Modal = () => {
     <dialog
       ref={modalRef}
       id="my_modal_5"
-      className="modal fixed inset-x-0 bg-black bg-opacity-60 flex justify-center items-start pt-14"
+      className="modal fixed inset-x-0 bg-black bg-opacity-80 flex justify-center items-start pt-14"
     >
       <div className="modal-box bg-white bg-opacity-60 backdrop-blur-sm p-4 rounded-lg shadow-md max-w-xs w-full">
         <div className="flex items-center space-x-2 mb-2">

@@ -2,6 +2,7 @@ import { useState, useRef } from "react";
 import HTMLFlipBook from "react-pageflip";
 import Cover from "../cover/Cover";
 import Couple from "../couple/Couple";
+import CouplePhoto from "../couplePhoto/CouplePhoto";
 import AgendaWeddContract from "../agendaWeddContract/AgendaWeddContract";
 import AgendaWeddReception from "../agendaWeddReception/AgendaWeddReception";
 import Poem from "../poem/Poem";
@@ -11,6 +12,7 @@ import OurJourney from "../ourJourney/OurJourney";
 import BackCover from "../backCover/BackCover";
 import pageFlipSound from "../../assets/page-flip.mp3";
 import "./MyBook.css";
+import PhotoGallery from "../photoGallery/PhotoGallery";
 
 export default function MyBook() {
   const [showGreetings, setShowGreetings] = useState(false);
@@ -31,7 +33,7 @@ export default function MyBook() {
       {!showGreetings && (
         <div className="fade-in-up">
           <HTMLFlipBook
-            width={330}
+            width={340}
             height={695}
             maxShadowOpacity={0.5}
             showCover={true}
@@ -39,11 +41,13 @@ export default function MyBook() {
           >
             <Cover />
             <Couple />
+            <CouplePhoto />
             <AgendaWeddContract />
             <AgendaWeddReception />
             <Poem />
             <OurJourney />
             <Gift />
+            <PhotoGallery />
             <BackCover />
           </HTMLFlipBook>
         </div>

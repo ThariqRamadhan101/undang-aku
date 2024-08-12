@@ -2,7 +2,7 @@ import { BrowserRouter } from "react-router-dom";
 import MyBook from "./components/myBook/MyBook";
 import Modal from "./components/modal/Modal";
 import MusicPlayer from "./components/musicPlayer/MusicPlayer";
-import WoodBackground from "./assets/wood-background.png";
+import WoodBackground from "./assets/wood-background.jpg";
 
 function App() {
   return (
