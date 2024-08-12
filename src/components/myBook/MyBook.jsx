@@ -16,15 +16,25 @@ import PhotoGallery from "../photoGallery/PhotoGallery";
 
 export default function MyBook() {
   const [showGreetings, setShowGreetings] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1); // State for current page
+  const [totalPages, setTotalPages] = useState(0); // State for total pages
   const audioRef = useRef(null);
+  const flipBookRef = useRef(null);
 
   const toggleGreetings = () => {
     setShowGreetings(!showGreetings);
   };
 
-  const handlePageFlip = () => {
+  const handlePageFlip = (event) => {
     if (audioRef.current) {
       audioRef.current.play();
+    }
+    setCurrentPage(event.data + 1); // Update current page number
+  };
+
+  const handleBookLoad = () => {
+    if (flipBookRef.current) {
+      setTotalPages(flipBookRef.current.pageFlip().getPageCount()); // Update total pages when the book is loaded
     }
   };
 
@@ -37,7 +47,9 @@ export default function MyBook() {
             height={695}
             maxShadowOpacity={0.5}
             showCover={true}
-            onFlip={handlePageFlip} // Handle page flip event
+            onFlip={(event) => handlePageFlip(event)}
+            ref={flipBookRef}
+            onInit={handleBookLoad} // Initialize total pages on book load
           >
             <Cover />
             <Couple />
@@ -50,6 +62,9 @@ export default function MyBook() {
             <PhotoGallery />
             <BackCover />
           </HTMLFlipBook>
+          <div className="flex justify-center items-center mt-4 text-sm font-bold text-gray-800">
+            Halaman {currentPage} dari {totalPages}
+          </div>
         </div>
       )}
 

@@ -23,6 +23,9 @@ const BackCover = forwardRef((props, ref) => {
           </p>
         </div>
       </div>
+      <div className="block absolute bottom-4 left-5 transform -translate-x-1/2 text-gray-600 text-sm pulse-animation">
+        <p>&lt;&lt;&lt;</p>
+      </div>
     </div>
   );
 });

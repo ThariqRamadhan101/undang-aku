@@ -30,7 +30,7 @@ const AgendaWeddReception = forwardRef((props, ref) => {
       className="flex items-center justify-center p-8 border bg-[#F4ECE8] border-gray-300 shadow-lg h-full w-full"
     >
       <div className="flex flex-col items-center justify-center text-center">
-        <h1 className="text-3xl font-bold mb-5 font-playfair">Save The Date</h1>
+        <h1 className="text-3xl font-bold mb-2 font-playfair">Save The Date</h1>
 
         {/* Small Line Divider */}
         <div className="w-20 h-[1px] bg-gray-400 mb-5"></div>
@@ -67,7 +67,7 @@ const AgendaWeddReception = forwardRef((props, ref) => {
         </div>
 
         {/* Event Details - Event 2 */}
-        <div className="relative p-4 shadow-md border border-gray-300 bg-white rounded-b-3xl w-72  mt-5">
+        <div className="relative p-4 shadow-md border border-gray-300 bg-white rounded-b-3xl w-72  mt-2">
           <div className="flex flex-col items-center">
             <h2 className="text-2xl font-semibold font-playfair mb-2">
               {event2.title}
@@ -96,6 +96,12 @@ const AgendaWeddReception = forwardRef((props, ref) => {
             )}
           </div>
         </div>
+      </div>
+      <div className="block absolute bottom-4 left-5 transform -translate-x-1/2 text-gray-600 text-sm pulse-animation">
+        <p>&lt;&lt;&lt;</p>
+      </div>
+      <div className="block absolute bottom-4 right-5 transform -translate-x-1/2 text-gray-600 text-sm pulse-animation">
+        <p>&gt;&gt;&gt;</p>
       </div>
     </div>
   );

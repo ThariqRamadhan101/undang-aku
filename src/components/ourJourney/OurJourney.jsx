@@ -110,9 +110,15 @@ const OurJourney = forwardRef((props, ref) => {
 
           <div
             key={index}
-            className="bg-white p-6 rounded-lg shadow-lg max-w-2xl mx-auto mt-8 text-xs text-justify h-[570px] w-full"
+            className="bg-white p-6 rounded-lg shadow-lg max-w-2xl mx-auto mt-8 text-xs text-justify h-[552px] w-full"
           >
             {section}
+          </div>
+          <div className="block absolute bottom-4 left-5 transform -translate-x-1/2 text-gray-600 text-sm pulse-animation">
+            <p>&lt;&lt;&lt;</p>
+          </div>
+          <div className="block absolute bottom-4 right-5 transform -translate-x-1/2 text-gray-600 text-sm pulse-animation">
+            <p>&gt;&gt;&gt;</p>
           </div>
         </div>
       ))}
