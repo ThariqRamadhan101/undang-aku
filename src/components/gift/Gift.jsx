@@ -5,6 +5,7 @@ import OCBCLogo from "../../assets/ocbc-logo.jpg";
 import BNILogo from "../../assets/bni-logo.png";
 import BRILogo from "../../assets/bri-logo.png";
 import gopayLogo from "../../assets/gopay-logo.jpg";
+import PagePagination from "../pagePagination/PagePagination";
 
 const Gift = forwardRef((props, ref) => {
   const AddressCopyToClipboard = (text) => {
@@ -107,12 +108,7 @@ const Gift = forwardRef((props, ref) => {
           </div>
         </div>
       </div>
-      <div className="block absolute bottom-4 left-5 transform -translate-x-1/2 text-gray-600 text-sm pulse-animation">
-        <p>&lt;&lt;&lt;</p>
-      </div>
-      <div className="block absolute bottom-4 right-5 transform -translate-x-1/2 text-gray-600 text-sm pulse-animation">
-        <p>&gt;&gt;&gt;</p>
-      </div>
+      <PagePagination />
     </div>
   );
 });

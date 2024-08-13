@@ -2,7 +2,7 @@ import { forwardRef } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/opacity.css";
 import BookLogo from "../../assets/book-logo.png";
-import flowerDoodle from "../../assets/flower-doodle.avif";
+import FlowerDoodle from "../../assets/flower-doodle.avif";
 import "./Cover.css";
 
 const Cover = forwardRef((props, ref) => {
@@ -18,7 +18,7 @@ const Cover = forwardRef((props, ref) => {
       <div
         className="absolute inset-0 bg-repeat bg-center opacity-5 -z-10"
         style={{
-          backgroundImage: `url(${flowerDoodle})`,
+          backgroundImage: `url(${FlowerDoodle})`,
           backgroundSize: "500px", // Adjust size as needed
         }}
       ></div>

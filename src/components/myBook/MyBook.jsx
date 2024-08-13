@@ -62,7 +62,7 @@ export default function MyBook() {
             <PhotoGallery />
             <BackCover />
           </HTMLFlipBook>
-          <div className="flex justify-center items-center mt-4 text-sm font-bold text-gray-800">
+          <div className="flex justify-center items-center mt-4 text-sm font-bold text-white lg:text-black">
             Halaman {currentPage} dari {totalPages}
           </div>
         </div>

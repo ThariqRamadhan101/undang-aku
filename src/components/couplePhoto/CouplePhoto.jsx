@@ -6,6 +6,7 @@ import ThariqImage from "../../assets/thariq.jpg";
 import SherlyImage from "../../assets/sherly.jpg";
 import FlowerTop from "../../assets/frame-top.png";
 import FlowerBottom from "../../assets/frame-bottom.png";
+import PagePagination from "../pagePagination/PagePagination";
 
 const CouplePhoto = forwardRef((props, ref) => {
   return (
@@ -60,12 +61,7 @@ const CouplePhoto = forwardRef((props, ref) => {
         alt="FlowerBottom"
         className="absolute -bottom-0 -left-5  w-80"
       />
-      <div className="block absolute bottom-4 left-5 transform -translate-x-1/2 text-gray-600 text-sm pulse-animation">
-        <p>&lt;&lt;&lt;</p>
-      </div>
-      <div className="block absolute bottom-4 right-5 transform -translate-x-1/2 text-gray-600 text-sm pulse-animation">
-        <p>&gt;&gt;&gt;</p>
-      </div>
+      <PagePagination />
     </div>
   );
 });

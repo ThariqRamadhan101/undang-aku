@@ -7,6 +7,7 @@ import Image2 from "../../assets/photo-2.jpg";
 import Image3 from "../../assets/photo-3.jpg";
 import Image4 from "../../assets/photo-4.jpg";
 import Image5 from "../../assets/photo-5.jpg";
+import PagePagination from "../pagePagination/PagePagination";
 
 const PhotoGallery = forwardRef((props, ref) => {
   return (
@@ -66,12 +67,7 @@ const PhotoGallery = forwardRef((props, ref) => {
           />
         </div>
       </div>
-      <div className="block absolute bottom-4 left-5 transform -translate-x-1/2 text-gray-600 text-sm pulse-animation">
-        <p>&lt;&lt;&lt;</p>
-      </div>
-      <div className="block absolute bottom-4 right-5 transform -translate-x-1/2 text-gray-600 text-sm pulse-animation">
-        <p>&gt;&gt;&gt;</p>
-      </div>
+      <PagePagination />
     </div>
   );
 });
