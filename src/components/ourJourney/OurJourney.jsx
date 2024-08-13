@@ -17,13 +17,13 @@ const OurJourney = forwardRef((props, ref) => {
         bahwa halaman ini yang perlu diperhatikan. Menyelipkan secarik kertas.
         Berisikan “Aku tidak mengerti soal no. 15 dan 27. Bantu jelasin ya”.
         Menutup buku itu. Dan kemudian menyerahkan ke teman di sebelahnya dengan
-        ucapaan “Kasih ke Thariq.”
+        ucapaan “Kasih ke Thariq”.
       </p>
       <p className="mb-4">
-        Lelaki itu mencoret selebar kertas, mencurahkan isi kepala untuk
-        menuntaskan pertanyaan yang dikirimkan kepadanya. kemudian ia melakukan
-        hal yang sama. menyerahkan buku ke teman sebelahnya dan berbisik “Titip
-        ke Sherly”
+        Lelaki itu mencoret selembar kertas, mencurahkan isi kepala untuk
+        menuntaskan pertanyaan yang dikirimkan kepadanya. Kemudian ia melakukan
+        hal yang sama. Menyerahkan buku ke teman sebelahnya dan berbisik “Titip
+        ke Sherly”.
       </p>
       <p className="mb-4">Begitulah pertemanan mereka hingga tamat SMA.</p>
     </>,
@@ -49,7 +49,7 @@ const OurJourney = forwardRef((props, ref) => {
         Sepertinya ayah membaca kerutan di wajah gadis itu. Kemudian ayah
         melanjutkan ucapannya. “Ketika hendak Sidang Asrama kelas 12. <i>Kan</i>{" "}
         teman-teman menuliskan nama yang dianggap melanggar aturan asrama. Ayah
-        menemukan satu pengaduan untuk nama Sherly dan Thariq”
+        menemukan satu pengaduan untuk nama Sherly dan Thariq”.
       </p>
     </>,
     <>
@@ -87,7 +87,7 @@ const OurJourney = forwardRef((props, ref) => {
       </p>
       <p className="mb-4">
         Dan kemudian Thariq menyampaikan. “Aku ingin saling merawat agar terus
-        bertumbuh seperti mawar merah yang tumbuh di dalam buku”
+        bertumbuh seperti mawar merah yang tumbuh di dalam buku”.
       </p>
       <img
         src={FlowerJourney}

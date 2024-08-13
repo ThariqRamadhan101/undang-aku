@@ -27,7 +27,7 @@ const BackCover = forwardRef((props, ref) => {
               &quot;Semerbak <i>atsiri</i>, <i>linalol</i>, <i>kumarin</i>,{" "}
               <i>etil vanilin</i>, dan <i>benzil asetat</i> telah hadir. Di
               lembar-lembar berikutnya.
-              <b>{sebagaiValue ? " " + sebagaiValue + ", " : ""}</b>
+              <b>{sebagaiValue ? " " + sebagaiValue + ", " : " "}</b>
               {sebagaiValue ? "kaulah " : "Kaulah "}
               bunganya. Aromamu telah dipanggil untuk menyempurnakan cerita di
               halaman buku ini.&quot;
