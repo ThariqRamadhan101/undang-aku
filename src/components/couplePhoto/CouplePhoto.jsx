@@ -35,15 +35,18 @@ const CouplePhoto = forwardRef((props, ref) => {
             style={{ objectPosition: "center 20%" }}
             effect="opacity"
           />
-          <a
-            href="https://github.com/ThariqRamadhan101"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="github"
-            className="text-black z-10 mt-6 ml-2"
-          >
-            <FaGithub size={24} />
-          </a>
+          <div className="flex flex-col items-center z-10 mt-6 ml-2">
+            <a
+              href="https://github.com/ThariqRamadhan101"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="github"
+              className="text-black "
+            >
+              <FaGithub size={24} />
+            </a>
+            <p className="text-xs">ThariqRamadhan101</p>
+          </div>
         </div>
 
         {/* Full Line Divider with Text */}
@@ -56,15 +59,18 @@ const CouplePhoto = forwardRef((props, ref) => {
         </div>
 
         <div className="flex-1 flex flex-row items-start text-right mb-2">
-          <a
-            href="https://www.instagram.com/sherlyarnas22/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram"
-            className="text-pink-600 z-10 mt-6 mr-4"
-          >
-            <FaInstagram size={24} />
-          </a>
+          <div className="flex flex-col items-center z-10 mt-6 mr-4">
+            <a
+              href="https://www.instagram.com/sherlyarnas22/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="text-pink-600 "
+            >
+              <FaInstagram size={24} />
+            </a>
+            <p className="text-xs">@sherlyarnas22</p>
+          </div>
           <LazyLoadImage
             src={SherlyImage}
             alt="Sherly"
